@@ -201,12 +201,35 @@
     </div>
   </footer>
 
+    <style>
+    /* Loader spinner */
+    .loader {
+      border-top-color: #2563eb; /* Tailwind blue-600 */
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+
   <script>
     // Mobile menu toggle
     const menuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
     menuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+    });
+
+    // Hide loading overlay when page is fully loaded
+    window.addEventListener('load', () => {
+      const overlay = document.getElementById('loading-overlay');
+      if (overlay) {
+        overlay.style.transition = 'opacity 0.5s ease';
+        overlay.style.opacity = '0';
+        setTimeout(() => {
+          overlay.style.display = 'none';
+        }, 1000);
+      }
     });
   </script>
 
