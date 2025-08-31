@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KangaSys - Sectors</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0a0a23;
+      color: #e0e0e0;
+    }
+    .inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: bold;
+    }
+    /* Custom scrollbar for dark theme */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0a0a23;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #1e40af;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+</head>
+<body class="min-h-screen flex flex-col">
+
+
+<!-- Header -->
+  <header class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
+    <nav class="container mx-auto inter flex items-center justify-between py-4 px-6">
+      <a href="index.html">
+        <div class="text-3xl font-bold">Kangasys</div>
+      </a>
+      <ul class="hidden md:flex space-x-6 text-xl font-semibold">
+        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+        <li class="group relative">
+          <a href="products.html" class="hover:text-blue-400">Products</a>
+          <!-- Dropdown -->
+          <ul class="absolute hidden group-hover:block bg-blue-900 rounded mt-2 py-2 w-40 text-sm">
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">KangaVault</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">KanSustain</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">KanPerform</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">KanEngage</a></li>
+          </ul>
+        </li>
+        <li class="group relative">
+          <a href="services.html" class="hover:text-blue-400">Services</a>
+          <!-- Dropdown -->
+          <ul class="absolute hidden group-hover:block bg-blue-900 rounded mt-2 py-2 w-48 text-sm">
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Custom Software Development</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Cloud Engineering</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Cloud Migrations</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">App Modernisation</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">DevOps & DevSecOps</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Agile Enablement</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Enterprise Resourcing</a></li>
+          </ul>
+        </li>
+        <li class="group relative">
+          <a href="sectors.html" class="hover:text-blue-400">Sectors</a>
+          <!-- Dropdown -->
+          <ul class="absolute hidden group-hover:block bg-blue-900 rounded mt-2 py-2 w-48 text-sm">
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Cloud-Native Architecture & Engineering</a></li>
+            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Government & Public Sector</a></li>
+          </ul>
+        </li>
+        <li><a href="company.html" class="hover:text-blue-400">Company</a></li>
+        <li><a href="resources.html" class="hover:text-blue-400">Resources</a></li>
+      </ul>
+      <a href="contact.html" class="hidden md:inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Contact Us</a>
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden bg-blue-900 text-white px-6 pb-4 md:hidden">
+      <ul class="space-y-2">
+        <li><a href="index.html" class="block py-2">Home</a></li>
+        <li><a href="products.html" class="block py-2">Products</a></li>
+        <li><a href="services.html" class="block py-2">Services</a></li>
+        <li><a href="sectors.html" class="block py-2">Sectors</a></li>
+        <li><a href="company.html" class="block py-2">Company</a></li>
+        <li><a href="resources.html" class="block py-2">Resources</a></li>
+        <li><a href="contact.html" class="block py-2">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex-grow container mx-auto px-6 py-12">
+    <h1 class="text-4xl font-bold mb-8">Sector Overview Page</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="text-gray-300 max-w-md">
+        <h2 class="text-xl font-semibold mb-4">Cloud-Native Architecture & Engineering</h2>
+        <p>Our cloud engineering expertise helps organisations leverage the full potential of modern cloud platforms. We design scalable, resilient, and cost-effective cloud solutions.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-blue-900 bg-opacity-50 rounded-lg p-6 text-white hover:bg-blue-700 cursor-pointer transition">
+          <h3 class="font-semibold mb-2">Custom Software Development</h3>
+          <p>Digital transformation for better citizen services</p>
+        </div>
+        <div class="bg-blue-900 bg-opacity-50 rounded-lg p-6 text-white hover:bg-blue-700 cursor-pointer transition">
+          <h3 class="font-semibold mb-2">Custom Software Development</h3>
+          <p>Technology solutions for better patient outcomes</p>
+        </div>
+        <div class="bg-blue-900 bg-opacity-50 rounded-lg p-6 text-white hover:bg-blue-700 cursor-pointer transition">
+          <h3 class="font-semibold mb-2">Custom Software Development</h3>
+          <p>Empowering educational excellence through technology</p>
+        </div>
+        <div class="bg-blue-900 bg-opacity-50 rounded-lg p-6 text-white hover:bg-blue-700 cursor-pointer transition">
+          <h3 class="font-semibold mb-2">Custom Software Development</h3>
+          <p>Secure, compliant solutions for financial institutions</p>
+        </div>
+        <div class="bg-blue-900 bg-opacity-50 rounded-lg p-6 text-white hover:bg-blue-700 cursor-pointer transition">
+          <h3 class="font-semibold mb-2">Custom Software Development</h3>
+          <p>Smart building solutions for property excellence</p>
+        </div>
+        <div class="bg-blue-600 rounded-lg p-6 text-white cursor-pointer transition">
+          <h3 class="font-semibold mb-2">Custom Software Development</h3>
+          <p>Digital solutions for critical infrastructure</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center text-2xl font-semibold mb-8">
+      Ready to accelerate your digital transformation
+    </div>
+    <div class="text-center mb-12">
+      <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded">Contact Us</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-gray-400 text-sm py-8 mt-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 class="font-bold mb-4">Kangasys</h3>
+        <p class="mb-2">Lorem ipsum dolor sit amet consectetur. Laoreet sed felis sed at amet est at in sed.</p>
+        <div class="flex space-x-4">
+          <a href="#" aria-label="YouTube" class="hover:text-white">YT</a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-white">LI</a>
+          <a href="#" aria-label="Facebook" class="hover:text-white">FB</a>
+          <a href="#" aria-label="Instagram" class="hover:text-white">IG</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Products</h3>
+        <ul>
+          <li><a href="#" class="hover:text-white">KangaVault</a></li>
+          <li><a href="#" class="hover:text-white">KanSustain</a></li>
+          <li><a href="#" class="hover:text-white">KanPerform</a></li>
+          <li><a href="#" class="hover:text-white">KanEngage</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Website</h3>
+        <ul>
+          <li><a href="#" class="hover:text-white">Service</a></li>
+          <li><a href="#" class="hover:text-white">Sectors</a></li>
+          <li><a href="#" class="hover:text-white">Company</a></li>
+          <li><a href="#" class="hover:text-white">Resources</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4">Contact</h3>
+        <ul>
+          <li><a href="mailto:contact@klarity.com" class="hover:text-white">contact@klarity.com</a></li>
+          <li>123 Eco Lane, Green City, GA 30301</li>
+          <li>(555) 123-4567</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mx-auto px-6 mt-8 flex justify-between text-xs text-gray-500">
+      <div>© 2025 Kangasys. All rights reserved</div>
+      <div>
+        <a href="#" class="hover:text-white mr-4">Privacy Policy</a>
+        <a href="#" class="hover:text-white">Terms of Services</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
